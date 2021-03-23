@@ -1,0 +1,28 @@
+@import "~sass-rem";
+
+.Project {
+  background-color: rgba(32, 33, 34);
+  padding: rem(16px) rem(32px);
+  font-size: rem(13px);
+  display: flex;
+  justify-content: space-between;
+
+  &_language,
+  &_name {
+    font-weight: 500;
+  }
+
+  &_name {
+    font-size: rem(24px);
+  }
+
+  &_description {
+    font-weight: normal;
+  }
+
+  &_link {
+    display: flex;
+    align-items: center;
+    margin-left: rem(16px);
+  }
+}
