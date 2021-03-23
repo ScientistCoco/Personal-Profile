@@ -1,0 +1,25 @@
+@import "~sass-rem";
+
+.Index {
+  height: 100%;
+  background-color: #151515;
+  padding: rem(80px) rem(64px);
+  display: flex;
+  justify-content: space-between;
+
+  &__header {
+    font-size: rem(72px);
+  }
+
+  &__description {
+    color: #bdbdbd;
+  }
+
+  &__navigation {
+    margin-top: rem(56px);
+  }
+
+  &__project {
+    padding: rem(12px) 0;
+  }
+}

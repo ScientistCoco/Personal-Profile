@@ -1,0 +1,49 @@
+@import "~sass-rem";
+
+.Navigation {
+  &__list {
+    list-style: none;
+    margin: 0;
+
+    &__item {
+      color: #bdbdbd;
+      transition-property: background-color, width, color;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      font-size: rem(18px);
+
+      &--focused,
+      &:hover,
+      &:focus {
+        color: #f2f2f2;
+        .Navigation__list__item-line {
+          background-color: #f2f2f2;
+          width: rem(64px);
+        }
+      }
+
+      &-line {
+        background-color: #bdbdbd;
+        height: rem(1px);
+        width: rem(32px);
+        margin-bottom: rem(4px);
+        margin-left: rem(16px);
+        margin-right: rem(16px);
+        display: inline-block;
+        transition-property: background-color, width, color;
+        transition: all 0.2s ease-in-out;
+
+        &--focused,
+        &:focus {
+          background-color: #f2f2f2;
+          width: rem(64px);
+        }
+      }
+
+      &-number {
+        font-weight: bold;
+        font-size: rem(18px);
+      }
+    }
+  }
+}
