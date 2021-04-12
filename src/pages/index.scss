@@ -1,11 +1,17 @@
 @import "~sass-rem";
 
 .Index {
-  height: 100%;
-  background-color: #151515;
+  height: fit-content;
   padding: rem(80px) rem(64px);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-column-gap: 10%;
+}
+
+.Introduction {
+  position: sticky;
+  height: fit-content;
+  top: rem(24px);
 
   &__header {
     font-size: rem(72px);
@@ -18,8 +24,21 @@
   &__navigation {
     margin-top: rem(56px);
   }
+}
 
-  &__project {
-    padding: rem(12px) 0;
+.Info {
+  .Personal-projects {
+    min-height: rem(720px);
+  }
+
+  .Skills,
+  .Contact {
+    min-height: rem(560px);
+  }
+
+  .Skills {
+    &_languages {
+      margin: rem(40px) 0;
+    }
   }
 }

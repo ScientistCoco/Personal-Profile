@@ -21,8 +21,11 @@
   }
 
   &_link {
-    display: flex;
-    align-items: center;
+    display: grid;
+    row-gap: rem(8px);
+    grid-template-rows: 40% 40%;
     margin-left: rem(16px);
+    margin-top: rem(24px);
+    align-items: center;
   }
 }
