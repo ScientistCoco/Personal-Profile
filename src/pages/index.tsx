@@ -84,7 +84,10 @@ const IndexPage = () => {
           callInViewPort={() => setPersonalProjectsInViewPort(true)}
           callExitViewPort={() => setPersonalProjectsInViewPort(false)}
         >
-          <section className="Personal-projects" id="Personal_Projects">
+          <section
+            className="Personal-projects Info_section"
+            id="Personal_Projects"
+          >
             <h2 className="d-none">Personal Projects</h2>
             {projects.map(project => (
               <div className="py-2">
@@ -103,7 +106,7 @@ const IndexPage = () => {
           callInViewPort={() => setSkillsInViewPort(true)}
           callExitViewPort={() => setSkillsInViewPort(false)}
         >
-          <section className="Skills" id="Skills">
+          <section className="Skills Info_section" id="Skills">
             <div className="Skills_languages">
               <h2>Languages:</h2>
               <Languages languages={[".JS", "C#", ".PY", "C", "SQL", "JAVA"]} />
@@ -128,7 +131,7 @@ const IndexPage = () => {
           callInViewPort={() => setContactInViewPort(true)}
           callExitViewPort={() => setContactInViewPort(false)}
         >
-          <section className="Contact" id="Contact">
+          <section className="Contact Info_section" id="Contact">
             <h2 className="d-none">Contact</h2>
             <Contact />
           </section>

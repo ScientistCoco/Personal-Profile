@@ -16,7 +16,7 @@ const contacts = [
   },
   {
     icon: <Email />,
-    link: "courtney.lum@gmail.com",
+    link: "mailto: courtney.lum@gmail.com",
   },
 ]
 
@@ -26,7 +26,14 @@ const Contact: FC<any> = () => (
       {contacts.map(contact => (
         <li className="Contact__list__item">
           <span>{contact.icon}</span>
-          <span className="Contact__list__item-link">{contact.link}</span>
+          <a
+            className="Contact__list__item-link"
+            href={contact.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {contact.link}
+          </a>
         </li>
       ))}
     </ul>

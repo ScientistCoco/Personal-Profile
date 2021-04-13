@@ -1,4 +1,5 @@
 @import "~sass-rem";
+@import "../../variables";
 
 .Index {
   height: fit-content;
@@ -6,6 +7,13 @@
   display: grid;
   grid-template-columns: 40% 40%;
   grid-column-gap: 10%;
+
+  @media (max-width: $lg-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    padding-left: rem(40px);
+    padding-right: rem(40px);
+  }
 }
 
 .Introduction {
@@ -13,8 +21,16 @@
   height: fit-content;
   top: rem(24px);
 
+  @media (max-width: $lg-breakpoint) {
+    position: initial;
+  }
+
   &__header {
     font-size: rem(72px);
+
+    @media (max-width: $lg-breakpoint) {
+      font-size: rem(56px);
+    }
   }
 
   &__description {
@@ -36,9 +52,19 @@
     min-height: rem(560px);
   }
 
+  .Contact {
+    @media (max-width: $lg-breakpoint) {
+      min-height: inherit;
+    }
+  }
+
   .Skills {
     &_languages {
       margin: rem(40px) 0;
     }
+  }
+
+  &_section {
+    margin-bottom: rem(64px);
   }
 }

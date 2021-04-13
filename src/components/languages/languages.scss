@@ -1,8 +1,10 @@
 @import "~sass-rem";
+@import "../../../variables";
 
 .Languages {
   display: flex;
   flex-wrap: wrap;
+
   &__container {
     border-radius: 50%;
     border: rem(3px) #f2f2f2 solid;
@@ -14,5 +16,10 @@
     font-weight: 500;
     font-size: rem(18px);
     margin: rem(16px) rem(18px);
+
+    @media (max-width: $lg-breakpoint) {
+      margin-left: rem(16px);
+      margin-right: rem(16px);
+    }
   }
 }
