@@ -21,7 +21,7 @@ const projects = [
     name: "Accommodex",
     description:
       "Machine learning to determine if it is better to sell, rent or AirBnB a property",
-    link: "https://accommodex.netlify.com/",
+    link: "https://accommodex.netlify.app/",
     githubLink: "https://github.com/ScientistCoco/Accommodex_Client",
   },
   {
@@ -122,6 +122,22 @@ const IndexPage = () => {
                   "GatsbyJS",
                   ".Net Core",
                   ".Net Framework",
+                ]}
+              />
+            </div>
+            <div className="Skills_tools">
+              <h2>Tools:</h2>
+
+              <Frameworks
+                frameworks={[
+                  "GitHub Actions",
+                  "AWS",
+                  "Observe",
+                  "Blazemeter",
+                  "Vault",
+                  "Selenium",
+                  "Splunk",
+                  "TeamCity"
                 ]}
               />
             </div>
